@@ -45,7 +45,7 @@ async function run() {
 		const mod = await federation.loadRemote<{ default: { result: string } }>(
 			'remote/definition',
 		);
-		status.textContent = `OK:${mod.default.result}`;
+		status.textContent = `OK:${mod?.default.result}`;
 		(window as any).__REPRO_RESULT__ = status.textContent;
 	} catch (err) {
 		const message =

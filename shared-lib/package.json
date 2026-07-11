@@ -1,0 +1,14 @@
+{
+  "name": "@repro/shared-lib",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./src/index.js"
+    }
+  },
+  "scripts": {
+    "build": "echo shared-lib no-build"
+  }
+}

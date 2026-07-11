@@ -1,0 +1,17 @@
+{
+  "name": "vite-mf-race-condition",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev:host": "pnpm --filter host dev",
+    "dev:remote": "pnpm --filter remote dev",
+    "build": "pnpm -r build",
+    "preview:host": "pnpm --filter host preview",
+    "preview:remote": "pnpm --filter remote preview",
+    "test": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.54.2"
+  }
+}

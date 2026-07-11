@@ -1,0 +1,16 @@
+{
+  "name": "host",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --port 5173",
+    "build": "vite build",
+    "preview": "vite preview --port 4173 --strictPort"
+  },
+  "dependencies": {
+    "@module-federation/enhanced": "^0.18.0",
+    "@repro/shared-lib": "workspace:*",
+    "vite": "^6.3.5"
+  }
+}
